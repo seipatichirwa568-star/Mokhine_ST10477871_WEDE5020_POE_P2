@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://seipatichirwa568-star.github.io/Mokhine_ST10477871_WEDE5020_POE_P2/
