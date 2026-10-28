@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project and Service Enquiry | Apex Logic Systems</title>
+  <meta name="description" content="Use Apex Logic Systems enquiry form to discuss software requirements, budget and availability with field validation and online submission.">
+  <meta name="keywords" content="software project enquiry Pretoria, cloud integration quote, custom application consultation">
+  <meta name="robots" content="index,follow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Apex <span>Logic Systems</span><small>Enterprise software concepts</small></a>
+    <button class="menu-toggle" type="button" id="menu-toggle" aria-controls="site-nav" aria-expanded="false">Menu ☰</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation"><ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="enquiry.html" aria-current="page">Enquiry</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-intro"><p class="eyebrow">Project enquiries</p><h1>Tell us about your project</h1>
+<p class="lead">Choose a service and explain what you want to achieve. The form provides guidance, but costs and availability require confirmation.</p></section>
+<section class="section form-layout">
+  <aside class="panel"><h2>Before you submit</h2><p>Useful details include the current business problem, who would use the system, the expected timeline and your approximate budget.</p><p class="note-box">This website does not provide binding project prices or guaranteed bookings.</p></aside>
+  <div class="panel"><h2>Service enquiry form</h2>
+    <form id="enquiry-form" class="form netlify-form" name="enquiry" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+      <input type="hidden" name="form-name" value="enquiry">
+      <p class="hide"><label>Leave this blank<input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="field"><label for="enquiry-name">Your name *</label><input id="enquiry-name" name="full-name" autocomplete="name" required minlength="2" maxlength="70" placeholder="Your full name"><small id="error-enquiry-name" class="field-error" data-error-for="enquiry-name"></small></div>
+      <div class="field"><label for="enquiry-email">Email address *</label><input id="enquiry-email" name="email" type="email" required autocomplete="email" maxlength="110" placeholder="name@example.com"><small id="error-enquiry-email" class="field-error" data-error-for="enquiry-email"></small></div>
+      <div class="field"><label for="enquiry-phone">Phone number (optional)</label><input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" pattern="[+0-9 ()-]{9,18}" placeholder="+27 82 123 4567"><small id="error-enquiry-phone" class="field-error" data-error-for="enquiry-phone"></small></div>
+      <div class="field"><label for="enquiry-service">Which service? *</label><select id="enquiry-service" name="service" required><option value="">Select a service</option><option>Banking and FinTech Software</option><option>Business Process Automation</option><option>Cloud Integration and Migration</option><option>Quality Assurance and Security Reviews</option></select><small id="error-enquiry-service" class="field-error" data-error-for="enquiry-service"></small></div>
+      <p id="service-guidance" class="note-box" aria-live="polite">Choose a service to see enquiry guidance.</p>
+      <div class="field"><label for="enquiry-budget">Estimated budget in rand (optional)</label><input id="enquiry-budget" name="budget" type="number" min="0" max="100000000" step="1" placeholder="e.g. 25000"><small id="error-enquiry-budget" class="field-error" data-error-for="enquiry-budget"></small></div>
+      <div class="field"><label for="enquiry-date">Preferred consultation date (optional)</label><input id="enquiry-date" name="preferred-date" type="date"><small id="error-enquiry-date" class="field-error" data-error-for="enquiry-date"></small></div>
+      <div class="field"><label for="enquiry-message">Project requirements *</label><textarea id="enquiry-message" name="message" rows="5" required minlength="10" maxlength="1600" placeholder="Describe your workflow, features and goals"></textarea><small id="error-enquiry-message" class="field-error" data-error-for="enquiry-message"></small></div>
+      <div class="field"><label class="check-line" for="enquiry-consent"><input id="enquiry-consent" name="consent" type="checkbox" value="yes" required><span>I agree to be contacted about this enquiry. *</span></label><small id="error-enquiry-consent" class="field-error" data-error-for="enquiry-consent"></small></div>
+      <button type="submit" class="btn">Submit project enquiry</button><p class="form-status" aria-live="polite" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <p>© 2026 Apex Logic Systems | WEDE5020 student website project</p>
+  <p><a href="service.html">Services</a> · <a href="enquiry.html">Project enquiries</a> · <a href="contact.html">Contact</a></p>
+  <p class="small-note">Pretoria service area is based on the original project. Office details and claims must be confirmed by the owner.</p>
+</footer>
+  <script defer src="js/script.js"></script>
+</body>
+</html>
